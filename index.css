@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #010409;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+    
+}
+   
+
+.main{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0d1117;
+    border: 0px solid black;
+    border-radius: 20px;
+    box-shadow: blue;
+    padding:30px;
+    gap: 40px;
+   
+    
+
+
+}
+.semi-main{
+    gap: 30px;
+}
+.button{
+    border-radius: 6px;
+    width: 80px;
+    height: 30px;
+    background-color: #4493f8;
+}
+.button:hover{
+    cursor: pointer;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.search{
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 6px;
+    background-color: #010409;
+    color: white;
+    width:250px;
+ 
+}
+.first{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+
+.viewer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 80px;
+ 
+
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.FolloweContainer{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    
+}
+.followList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgConatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+}
+.followList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Followers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.Following{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Repositories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Go{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 150px;
+    background-color: #4493f8;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.Not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
