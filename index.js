@@ -1,6 +1,6 @@
 let search = document.querySelector('.button');
 let searchBar = document.querySelector('.search');
-
+let value;
 
 async function gitProfile(value) {
 
@@ -15,10 +15,23 @@ async function gitProfile(value) {
     
 }
 
+searchBar.addEventListener('keypress', async (event)=>{
+    if (event.key === "Enter") { // ✅ Check if Enter key is pressed
+        event.preventDefault(); // ✅ Prevent default form submission (if inside a form)
+        value = searchBar.value
+        
+        await loader();
+        gitProfile(value);
+
+    }
+
+
+})
+
 
 
 search.addEventListener("click", async () => {
-    let value = searchBar.value;
+    value = searchBar.value;
     if (!value) {
         alert("Please enter a username!");
         return;
